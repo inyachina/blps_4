@@ -11,10 +11,15 @@
       "description": "the essay search contains a substring of the first input"
     },
     {
-      "label": "Category",
-      "type": "textfield",
-      "id": "Field_09fne44",
-      "key": "category_select"
+      "label": "Category ID",
+      "type": "number",
+      "id": "Field_0vnarh2",
+      "key": "category_id",
+      "description": "category_id",
+      "validate": {
+        "min": 1
+      },
+      "defaultValue": 1
     },
     {
       "action": "submit",

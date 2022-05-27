@@ -13,19 +13,15 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class EssayService {
-    @Autowired
-    EssayRepository essayRepository;
-    @Autowired
-    CategoryRepository categoryRepository;
+    private EssayRepository essayRepository;
+    private CategoryRepository categoryRepository;
 
     public List<EssayEntity> getEssaysByTitle(String title) {
         return essayRepository.findAllByTitle(title);
     }
 
-    public List<EssayEntity> getEssaysByCategory(String categoryName) {
-        return categoryRepository.findByName(categoryName)
-                .map(value -> essayRepository.findAllByCategory(value.getId()))
-                .orElse(null);
+    public List<EssayEntity> getEssaysByCategory(Integer categoryId) {
+        return essayRepository.findAllByCategory(categoryId);
     }
 
     public List<EssayEntity> getRecentEssays(int count) {

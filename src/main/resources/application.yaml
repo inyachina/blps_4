@@ -1,8 +1,8 @@
 camunda.bpm:
   auto-deployment-enabled: true
   admin-user:
-    id: s283945
-    password: iow988
+    id: admin
+    password: admin
   filter:
     create: All tasks
 
@@ -12,3 +12,6 @@ spring:
     username: postgres
     password: 123
     driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto:update
