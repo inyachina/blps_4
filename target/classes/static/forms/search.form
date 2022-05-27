@@ -1,0 +1,36 @@
+{
+  "components": [
+    {
+      "label": "Search",
+      "type": "textfield",
+      "id": "Field_1ntgozd",
+      "key": "title_input",
+      "validate": {
+        "required": false
+      },
+      "description": "the essay search contains a substring of the first input"
+    },
+    {
+      "label": "Category",
+      "type": "textfield",
+      "id": "Field_09fne44",
+      "key": "category_select"
+    },
+    {
+      "action": "submit",
+      "label": "search",
+      "type": "button",
+      "id": "Field_1synj4e",
+      "key": "field_1xjnqan"
+    }
+  ],
+  "type": "default",
+  "id": "search",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.17.0",
+  "schemaVersion": 4
+}

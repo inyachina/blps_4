@@ -1,0 +1,14 @@
+camunda.bpm:
+  auto-deployment-enabled: true
+  admin-user:
+    id: s283945
+    password: iow988
+  filter:
+    create: All tasks
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost/blps
+    username: postgres
+    password: 123
+    driver-class-name: org.postgresql.Driver
