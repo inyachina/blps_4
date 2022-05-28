@@ -1,0 +1,26 @@
+{
+  "components": [
+    {
+      "label": "Essay Id",
+      "type": "number",
+      "id": "Field_1qzk02m",
+      "key": "chosen_essay_id"
+    },
+    {
+      "action": "submit",
+      "label": "Button",
+      "type": "button",
+      "id": "Field_12uhas3",
+      "key": "field_0q7w0yh"
+    }
+  ],
+  "type": "default",
+  "id": "chooseEssay",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.0.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "schemaVersion": 4
+}

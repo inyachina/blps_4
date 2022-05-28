@@ -17,7 +17,8 @@ import java.util.Date;
 @ToString
 @RequiredArgsConstructor
 @Table(name = "essay")
-public class EssayEntity implements Serializable {
+public class EssayEntity implements Serializable, Comparable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
@@ -52,5 +53,10 @@ public class EssayEntity implements Serializable {
         this.category = category;
         this.status = status;
         this.dateLoad = new Timestamp(new Date().getTime());
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        return this.id - ((EssayEntity) o).getId();
     }
 }

@@ -1,7 +1,7 @@
 {
   "components": [
     {
-      "label": "Search",
+      "label": "Title",
       "type": "textfield",
       "id": "Field_1ntgozd",
       "key": "title_input",

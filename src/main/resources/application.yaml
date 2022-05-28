@@ -10,7 +10,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost/blps
     username: postgres
-    password: 123
+    password: iow988
     driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:

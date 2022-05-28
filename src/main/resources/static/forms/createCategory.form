@@ -1,0 +1,26 @@
+{
+  "components": [
+    {
+      "label": "Category name",
+      "type": "textfield",
+      "id": "Field_057j62k",
+      "key": "category_name_input"
+    },
+    {
+      "action": "submit",
+      "label": "create",
+      "type": "button",
+      "id": "Field_1by13nn",
+      "key": "field_0fchrtq"
+    }
+  ],
+  "type": "default",
+  "id": "createCategory",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.0.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.0.0"
+  },
+  "schemaVersion": 4
+}

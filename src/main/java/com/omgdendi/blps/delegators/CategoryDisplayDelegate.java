@@ -24,10 +24,10 @@ public class CategoryDisplayDelegate implements JavaDelegate {
     @Override
     public void execute(DelegateExecution delegateExecution) throws Exception {
         List<CategoryEntity> categories = categoryRepository.findAll();
-        Map<Integer, String> mapIdCategory =
-                categories.stream().collect(Collectors.toMap(CategoryEntity::getId, category -> category.getName()));
-        delegateExecution.setVariable("available_categories", mapIdCategory);
-        System.out.print("mapIdCategory ");
-        System.out.println(mapIdCategory);
+        Map<String, Object> mapIdCategory =
+                categories.stream().collect(
+                        Collectors.toMap(category ->
+                                "Category ID [" +category.getId().toString()+"]", CategoryEntity::getName));
+        delegateExecution.setVariables(mapIdCategory);
     }
 }
